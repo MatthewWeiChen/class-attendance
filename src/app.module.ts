@@ -3,10 +3,10 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { BookmarkModule } from './bookmark/bookmark.module';
 import { PrismaModule } from './prisma/prisma.module';
-import { PrismaNoSpecService } from './prisma--no-spec/prisma--no-spec.service';
+import { PrismaService } from './prisma/prisma.service';
 
 @Module({
   imports: [AuthModule, UserModule, BookmarkModule, PrismaModule],
-  providers: [PrismaNoSpecService],
+  providers: [PrismaService],
 })
 export class AppModule {}
